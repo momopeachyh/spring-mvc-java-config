@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 
 	@RequestMapping("/")
-	public String displayGreeting(ModelMap model) {
-		model.addAttribute("message", "hello from homecontroller");
-		return "home";
+	public String displayLogin(ModelMap model) {
+		model.addAttribute("value", "Please login to continue.");
+		return "index";
 	}
 	
 	@RequestMapping("/message")
@@ -18,4 +18,11 @@ public class HomeController {
 		model.addAttribute("value", "this is a special message");
 		return "message";
 	}
+	
+	@RequestMapping("/failure")
+	public String displayMess(ModelMap model) {
+		model.addAttribute("value", "failure test");
+		return "message";
+	}
+	
 }

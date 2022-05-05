@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="success.css" />
+<link rel="stylesheet" href="failure.css" />
 <title>Insert title here</title>
 </head>
 <body>
-<h1 class="success">Login successful.</h1>
- <h2>Welcome, ${userName}</h2>
+<h1 class="failure">Sorry, user not found</h1>
+<h2>${value}</h2>
+<h3>test</h3>
 </body>
 </html>
